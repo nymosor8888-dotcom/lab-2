@@ -1,381 +1,193 @@
-```html
 <!DOCTYPE html>
 <html lang="mn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Б.Ням-Осор | CV</title>
-
+    <title>Хэрэглэгчийн Бүртгэлийн Форм</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f4f7;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f9;
             color: #333;
         }
 
-        .container {
-            width: 80%;
-            max-width: 1000px;
-            margin: 40px auto;
-            background-color: white;
-            padding: 35px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-
-        header {
+        header, footer {
+            background-color: #2c3e50;
+            color: #fff;
             text-align: center;
-            padding-bottom: 25px;
-            border-bottom: 2px solid #eeeeee;
+            padding: 1rem;
         }
 
-        .profile-img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #333;
+        main {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
-        h1 {
-            margin-bottom: 5px;
-            font-size: 32px;
+        .form-group {
+            margin-bottom: 1.2rem;
         }
 
-        .job-title {
-            color: #666;
-            font-size: 18px;
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
         }
 
-        section {
-            margin-top: 30px;
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 0.6rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
         }
 
-        h2 {
-            color: #222;
-            border-left: 5px solid #333;
-            padding-left: 10px;
-        }
-
-        p {
-            line-height: 1.7;
-        }
-
-        ul {
-            line-height: 2;
-        }
-
-        .skills {
+        .inline-group {
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            gap: 1rem;
+            align-items: center;
         }
 
-        .skill {
-            background-color: #333;
+        .inline-group label {
+            font-weight: normal;
+            margin-bottom: 0;
+        }
+
+        button {
+            background-color: #3498db;
             color: white;
-            padding: 8px 15px;
-            border-radius: 20px;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
         }
 
-        .info {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-
-        .card {
-            background-color: #f7f7f7;
-            padding: 15px;
-            border-radius: 10px;
-        }
-
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            color: #777;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                width: 90%;
-                padding: 20px;
-            }
-
-            .info {
-                grid-template-columns: 1fr;
-            }
+        button:hover {
+            background-color: #2980b9;
         }
     </style>
 </head>
-
 <body>
 
-<div class="container">
-
-    <!-- Танилцуулга -->
+    <!-- 1. Header (Хуудасны дээд хэсэг) -->
     <header>
-
-        <!-- profile.jpg гэдэг зураг HTML файлтайгаа нэг folder-т байна -->
-        <img src="profile.jpg" alt="Бямба Ням-Осор" class="profile-img">
-
-        <h1>Бямба Ням-Осор</h1>
-
-        <p class="job-title">
-            Программ хангамжийн инженерчлэлийн оюутан
-        </p>
-
-        <p>
-            ШУТИС-ийн Мэдээлэл холбооны сургууль
-        </p>
-
+        <h1>Вэб Сайтын Бүртгэл</h1>
     </header>
 
+    <!-- 1. Main (Үндсэн агуулга) -->
+    <main>
+        <h2>Бүртгэлийн Форм</h2>
+        <!-- 2. Форм -->
+        <form action="#" method="POST">
 
-    <!-- Өөрийн тухай -->
-    <section>
-
-        <h2>👨‍💻 Миний тухай</h2>
-
-        <p>
-            Сайн байна уу? Намайг Бямба Ням-Осор гэдэг.
-            Би ШУТИС-ийн Мэдээлэл холбооны сургуульд
-            Программ хангамжийн инженерчлэлийн чиглэлээр
-            суралцдаг оюутан.
-        </p>
-
-        <p>
-            Программчлал, вэб хөгжүүлэлт болон шинэ технологиудыг
-            сонирхон судалж байгаа бөгөөд өөрийн мэдлэг, чадвараа
-            тасралтгүй хөгжүүлэхийг зорьдог.
-        </p>
-
-    </section>
-
-
-    <!-- Боловсрол -->
-    <section>
-
-        <h2>🎓 Боловсрол</h2>
-
-        <div class="card">
-
-            <h3>ШУТИС – Мэдээлэл холбооны сургууль</h3>
-
-            <p>
-                <strong>Мэргэжил:</strong>
-                Программ хангамжийн инженерчлэл
-            </p>
-
-            <p>
-                <strong>Түвшин:</strong>
-                Бакалавр
-            </p>
-
-            <p>
-                Программчлал, алгоритм, веб технологи болон
-                программ хангамжийн инженерчлэлийн суурь
-                мэдлэг эзэмшиж байна.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- Техникийн чадвар -->
-    <section>
-
-        <h2>💻 Техникийн чадварууд</h2>
-
-        <div class="skills">
-
-            <span class="skill">HTML5</span>
-
-            <span class="skill">CSS3</span>
-
-            <span class="skill">C++</span>
-
-            <span class="skill">Python</span>
-
-            <span class="skill">Git</span>
-
-            <span class="skill">GitHub</span>
-
-            <span class="skill">VS Code</span>
-
-        </div>
-
-    </section>
-
-
-    <!-- Программчлалын чадвар -->
-    <section>
-
-        <h2>🚀 Программчлалын мэдлэг</h2>
-
-        <ul>
-
-            <li>HTML ашиглан веб хуудас үүсгэх</li>
-
-            <li>CSS ашиглан веб хуудасны загвар боловсруулах</li>
-
-            <li>C++ хэл дээр суурь программ бичих</li>
-
-            <li>Python хэл дээр программ бичих</li>
-
-            <li>Алгоритм болон логик сэтгэлгээний суурь мэдлэг</li>
-
-            <li>Git болон GitHub ашиглан код хадгалах</li>
-
-            <li>VS Code хөгжүүлэлтийн орчин ашиглах</li>
-
-        </ul>
-
-    </section>
-
-
-    <!-- Хувийн чадвар -->
-    <section>
-
-        <h2>⭐ Хувийн чадварууд</h2>
-
-        <ul>
-
-            <li>Шинэ зүйл хурдан суралцах хүсэлтэй</li>
-
-            <li>Багаар ажиллах чадвартай</li>
-
-            <li>Асуудлыг шийдвэрлэх сонирхолтой</li>
-
-            <li>Хариуцлагатай</li>
-
-            <li>Өөрийгөө хөгжүүлэх эрмэлзэлтэй</li>
-
-            <li>Цагийн менежментэд анхаардаг</li>
-
-        </ul>
-
-    </section>
-
-
-    <!-- Хэлний мэдлэг -->
-    <section>
-
-        <h2>🌎 Хэлний мэдлэг</h2>
-
-        <div class="info">
-
-            <div class="card">
-                <h3>Монгол хэл</h3>
-                <p>Төрөлх хэл</p>
+            <!-- Input 1: Text (Овог нэр) -->
+            <div class="form-group">
+                <label for="fullname">Бүтэн нэр:</label>
+                <input 
+                    type="text" 
+                    id="fullname" 
+                    name="fullname" 
+                    required 
+                    placeholder="Доржийн Бат"
+                >
             </div>
 
-            <div class="card">
-                <h3>Англи хэл</h3>
-                <p>Суурь – дунд түвшин</p>
+            <!-- Input 2: Email (Имэйл) -->
+            <div class="form-group">
+                <label for="email">Цахим цонх (Email):</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    placeholder="example@mail.com"
+                >
             </div>
 
-        </div>
-
-    </section>
-
-
-    <!-- Сонирхол -->
-    <section>
-
-        <h2>🎯 Сонирхол</h2>
-
-        <ul>
-
-            <li>Программчлал</li>
-
-            <li>Вэб хөгжүүлэлт</li>
-
-            <li>Шинэ технологи судлах</li>
-
-            <li>Компьютер болон технологи</li>
-
-            <li>Спорт</li>
-
-        </ul>
-
-    </section>
-
-
-    <!-- Холбоо барих -->
-    <section>
-
-        <h2>📞 Холбоо барих</h2>
- <div class="card">
-            <h3>📱 Утас</h3>
-            <p>94606280</p>
-    
-
-        <div class="info">
-
-            <div class="card">
-                <h3>📧 Email</h3>
-                <p>nymosor8888@gmail.com</p>
+            <!-- Input 3: Password (Нууц үг - Pattern валидацитай) -->
+            <div class="form-group">
+                <label for="password">Нууц үг:</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    required 
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Амжилттай бүртгүүлэхийн тулд ядаж 8 тэмдэгт, нэг том үсэг, нэг жижиг үсэг болон нэг тоо агуулсан байна."
+                    placeholder="••••••••"
+                >
             </div>
 
-            <div class="card">
-                <h3>💻 GitHub</h3>
-
-                <p>
-                    <a href="https://github.com" target="_blank">
-                        GitHub профайл
-                    </a>
-                </p>
-
+            <!-- Input 4: Date (Төрсөн огноо) -->
+            <div class="form-group">
+                <label for="dob">Төрсөн огноо:</label>
+                <input 
+                    type="date" 
+                    id="dob" 
+                    name="dob" 
+                    required
+                >
             </div>
 
-        </div>
+            <!-- Input 5: Radio (Хүйс) -->
+            <div class="form-group">
+                <label>Хүйс:</label>
+                <div class="inline-group">
+                    <input type="radio" id="gender-male" name="gender" value="male" required>
+                    <label for="gender-male">Эрэгтэй</label>
 
-    </section>
+                    <input type="radio" id="gender-female" name="gender" value="female" required>
+                    <label for="gender-female">Эмэгтэй</label>
+                </div>
+            </div>
 
+            <!-- Input 6: Select (Ажиллаж буй салбар/Мэргэжил) -->
+            <div class="form-group">
+                <label for="occupation">Салбар/Мэргэжил:</label>
+                <select id="occupation" name="occupation" required>
+                    <option value="">-- Сонгоно уу --</option>
+                    <option value="it">Мэдээллийн технологи</option>
+                    <option value="business">Бизнес / Санхүү</option>
+                    <option value="education">Боловсрол</option>
+                    <option value="art">Урлаг / Дизайн</option>
+                </select>
+            </div>
 
-    <!-- Зорилго -->
-    <section>
+            <!-- Input 7: Checkbox (Сонирхол) -->
+            <div class="form-group">
+                <label>Сонирхол:</label>
+                <div class="inline-group">
+                    <input type="checkbox" id="hobby-tech" name="hobbies" value="tech">
+                    <label for="hobby-tech">Технологи</label>
 
-        <h2>🎯 Миний зорилго</h2>
+                    <input type="checkbox" id="hobby-sports" name="hobbies" value="sports">
+                    <label for="hobby-sports">Спорт</label>
 
-        <p>
-            Программ хангамжийн инженерчлэлийн чиглэлээр
-            мэргэжлийн түвшинд хөгжиж, чанартай программ
-            хангамж бүтээдэг чадварлаг программист болох.
-            Мөн веб хөгжүүлэлт болон программчлалын мэдлэгээ
-            тасралтгүй сайжруулж, бодит төсөл дээр ажиллах
-            туршлага хуримтлуулахыг зорьж байна.
-        </p>
+                    <input type="checkbox" id="hobby-reading" name="hobbies" value="reading">
+                    <label for="hobby-reading">Ном унших</label>
+                </div>
+            </div>
 
-    </section>
+            <button type="submit">Бүртгүүлэх</button>
+        </form>
+    </main>
 
-
+    <!-- 1. Footer (Хуудасны доод хэсэг) -->
     <footer>
-
-        <p>
-            © 2026 Бямба Ням-Осор | Миний CV
-        </p>
-
+        <p>&copy; 2026 Бүх эрх хуулиар хамгаалагдсан.</p>
     </footer>
-
-</div>
 
 </body>
 </html>
-`
