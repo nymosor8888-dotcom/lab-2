@@ -1,0 +1,381 @@
+```html
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Б.Ням-Осор | CV</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #eeeeee;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #333;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+            font-size: 32px;
+        }
+
+        .job-title {
+            color: #666;
+            font-size: 18px;
+        }
+
+        section {
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: #222;
+            border-left: 5px solid #333;
+            padding-left: 10px;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+        ul {
+            line-height: 2;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background-color: #333;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .card {
+            background-color: #f7f7f7;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Танилцуулга -->
+    <header>
+
+        <!-- profile.jpg гэдэг зураг HTML файлтайгаа нэг folder-т байна -->
+        <img src="profile.jpg" alt="Бямба Ням-Осор" class="profile-img">
+
+        <h1>Бямба Ням-Осор</h1>
+
+        <p class="job-title">
+            Программ хангамжийн инженерчлэлийн оюутан
+        </p>
+
+        <p>
+            ШУТИС-ийн Мэдээлэл холбооны сургууль
+        </p>
+
+    </header>
+
+
+    <!-- Өөрийн тухай -->
+    <section>
+
+        <h2>👨‍💻 Миний тухай</h2>
+
+        <p>
+            Сайн байна уу? Намайг Бямба Ням-Осор гэдэг.
+            Би ШУТИС-ийн Мэдээлэл холбооны сургуульд
+            Программ хангамжийн инженерчлэлийн чиглэлээр
+            суралцдаг оюутан.
+        </p>
+
+        <p>
+            Программчлал, вэб хөгжүүлэлт болон шинэ технологиудыг
+            сонирхон судалж байгаа бөгөөд өөрийн мэдлэг, чадвараа
+            тасралтгүй хөгжүүлэхийг зорьдог.
+        </p>
+
+    </section>
+
+
+    <!-- Боловсрол -->
+    <section>
+
+        <h2>🎓 Боловсрол</h2>
+
+        <div class="card">
+
+            <h3>ШУТИС – Мэдээлэл холбооны сургууль</h3>
+
+            <p>
+                <strong>Мэргэжил:</strong>
+                Программ хангамжийн инженерчлэл
+            </p>
+
+            <p>
+                <strong>Түвшин:</strong>
+                Бакалавр
+            </p>
+
+            <p>
+                Программчлал, алгоритм, веб технологи болон
+                программ хангамжийн инженерчлэлийн суурь
+                мэдлэг эзэмшиж байна.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Техникийн чадвар -->
+    <section>
+
+        <h2>💻 Техникийн чадварууд</h2>
+
+        <div class="skills">
+
+            <span class="skill">HTML5</span>
+
+            <span class="skill">CSS3</span>
+
+            <span class="skill">C++</span>
+
+            <span class="skill">Python</span>
+
+            <span class="skill">Git</span>
+
+            <span class="skill">GitHub</span>
+
+            <span class="skill">VS Code</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- Программчлалын чадвар -->
+    <section>
+
+        <h2>🚀 Программчлалын мэдлэг</h2>
+
+        <ul>
+
+            <li>HTML ашиглан веб хуудас үүсгэх</li>
+
+            <li>CSS ашиглан веб хуудасны загвар боловсруулах</li>
+
+            <li>C++ хэл дээр суурь программ бичих</li>
+
+            <li>Python хэл дээр программ бичих</li>
+
+            <li>Алгоритм болон логик сэтгэлгээний суурь мэдлэг</li>
+
+            <li>Git болон GitHub ашиглан код хадгалах</li>
+
+            <li>VS Code хөгжүүлэлтийн орчин ашиглах</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- Хувийн чадвар -->
+    <section>
+
+        <h2>⭐ Хувийн чадварууд</h2>
+
+        <ul>
+
+            <li>Шинэ зүйл хурдан суралцах хүсэлтэй</li>
+
+            <li>Багаар ажиллах чадвартай</li>
+
+            <li>Асуудлыг шийдвэрлэх сонирхолтой</li>
+
+            <li>Хариуцлагатай</li>
+
+            <li>Өөрийгөө хөгжүүлэх эрмэлзэлтэй</li>
+
+            <li>Цагийн менежментэд анхаардаг</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- Хэлний мэдлэг -->
+    <section>
+
+        <h2>🌎 Хэлний мэдлэг</h2>
+
+        <div class="info">
+
+            <div class="card">
+                <h3>Монгол хэл</h3>
+                <p>Төрөлх хэл</p>
+            </div>
+
+            <div class="card">
+                <h3>Англи хэл</h3>
+                <p>Суурь – дунд түвшин</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Сонирхол -->
+    <section>
+
+        <h2>🎯 Сонирхол</h2>
+
+        <ul>
+
+            <li>Программчлал</li>
+
+            <li>Вэб хөгжүүлэлт</li>
+
+            <li>Шинэ технологи судлах</li>
+
+            <li>Компьютер болон технологи</li>
+
+            <li>Спорт</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- Холбоо барих -->
+    <section>
+
+        <h2>📞 Холбоо барих</h2>
+ <div class="card">
+            <h3>📱 Утас</h3>
+            <p>94606280</p>
+    
+
+        <div class="info">
+
+            <div class="card">
+                <h3>📧 Email</h3>
+                <p>nymosor8888@gmail.com</p>
+            </div>
+
+            <div class="card">
+                <h3>💻 GitHub</h3>
+
+                <p>
+                    <a href="https://github.com" target="_blank">
+                        GitHub профайл
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Зорилго -->
+    <section>
+
+        <h2>🎯 Миний зорилго</h2>
+
+        <p>
+            Программ хангамжийн инженерчлэлийн чиглэлээр
+            мэргэжлийн түвшинд хөгжиж, чанартай программ
+            хангамж бүтээдэг чадварлаг программист болох.
+            Мөн веб хөгжүүлэлт болон программчлалын мэдлэгээ
+            тасралтгүй сайжруулж, бодит төсөл дээр ажиллах
+            туршлага хуримтлуулахыг зорьж байна.
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 Бямба Ням-Осор | Миний CV
+        </p>
+
+    </footer>
+
+</div>
+
+</body>
+</html>
+`
